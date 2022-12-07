@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <style>table.type10 {
+        border-collapse: collapse;
+        text-align: left;
+        line-height: 1.5;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 16px 8px;
+      }
+      table.type10 thead th {
+        width: 40px;
+        padding: 8px;
+        font-weight: bold;
+        vertical-align: top;
+        color: #fff;
+        background: black;
+        margin: 16px 8px;
+      }
+      table.type10 tbody th {
+        width: 120px;
+        padding: 8px;
+      }
+      table.type10 td {
+        width: 280px;
+        padding: 8px;
+        vertical-align: top;
+      }
+      table.type10 .even {
+        background: #dbf1f9;
+      }
+      #top{
+        padding: 70px;
+        width:1000px;
+        font-weight: 600;
+	    font-size: 35px;
+    }
+    #flexbox{
+        display: flex;
+    }
+    #right{
+        
+    }
+    #left{
+        
+    }
+    #um{
+        width: 120px;
+    }
+
+      
+      </style>
+
+
+
+
+
+
+
+
+
+<script>
+    function onclick(){
+        let sum1 = 0;
+        let temp =0;
+        for(let i = 0; i < table.rows.length; i++)  {
+        temp += parseInt(table.rows[i].cells[2].innerHTML);
+        } 
+        for(let i = 0; i < table.rows.length; i++)  {
+            var fabric_seq = $('tabl-tr').eq(i).find('input[type="number"]').val();
+
+        sum1 += parseInt(table.rows[i].cells[1].innerHTML)*parseInt(table.rows[i].cells[2].innerHTML);
+        } 
+
+        document.getElementById('um').innerText = sum1/temp; 
+    }
+</script>
+      <div id="top">Kyungsung University Grad Calculation</div>
+      <div id="flexbox">
+      <div id="right">
+<table class="type10">
+    <thead>
+    <tr>
+      <th scope="cols" id="um">과목명</th>
+      <th scope="cols">성적</th>
+      <th scope="cols">학점</th>
+      <th scope="cols">전공</th>
+      <th scope="cols">핵심역량</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"><input type="name"></input></th>
+            <td>
+              <select id="um1">
+                  <option value="4.5">4.5</option>
+                  <option value="4.0">4.0</option>
+                  <option value="3.5">3.5</option>
+                  <option value="3.0">3.0</option>
+                  <option value="2.5">2.5</option>
+                  <option value="2.0">2.0</option>
+                  <option value="F">F</option>
+              </select>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+            <td>
+              <input type="checkbox">
+            </td>
+            <td>
+              <select>
+                  <option value="fi">융합</option>
+                  <option value="se">실무</option>
+                  <option value="th">글로벌</option>
+                  <option value="fo">소통</option>
+                  <option value="fi">공감</option>
+                  <option value="cr">창의</option>
+              </select>
+            </td>
+      
+          </tr>
+      
+      
+          <tr style="background: rgb(170, 163, 163);">
+              <th scope="row"><input type="name"></input></th>
+              <td>
+                <select>
+                    <option value="4.5">4.5</option>
+                    <option value="4.0">4.0</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3.0">3.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2.0">2.0</option>
+                    <option value="F">F</option>
+                </select>
+              </td>
+              <td>
+                <input type="number">
+            </td>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                <select>
+                    <option value="fi">융합</option>
+                    <option value="se">실무</option>
+                    <option value="th">글로벌</option>
+                    <option value="fo">소통</option>
+                    <option value="fi">공감</option>
+                    <option value="cr">창의</option>
+                </select>
+              </td>
+        
+            </tr><tr>
+                <th scope="row"><input type="name"></input></th>
+                <td>
+                  <select>
+                      <option value="4.5">4.5</option>
+                      <option value="4.0">4.0</option>
+                      <option value="3.5">3.5</option>
+                      <option value="3.0">3.0</option>
+                      <option value="2.5">2.5</option>
+                      <option value="2.0">2.0</option>
+                      <option value="F">F</option>
+                  </select>
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                  <input type="checkbox">
+                </td>
+                <td>
+                  <select>
+                      <option value="fi">융합</option>
+                      <option value="se">실무</option>
+                      <option value="th">글로벌</option>
+                      <option value="fo">소통</option>
+                      <option value="fi">공감</option>
+                      <option value="cr">창의</option>
+                  </select>
+                </td>
+          
+              </tr>
+          
+          
+              <tr style="background: rgb(170, 163, 163);">
+                  <th scope="row"><input type="name"></input></th>
+                  <td>
+                    <select>
+                        <option value="4.5">4.5</option>
+                        <option value="4.0">4.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="3.0">3.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="2.0">2.0</option>
+                        <option value="F">F</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="number">
+                </td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>
+                    <select>
+                        <option value="fi">융합</option>
+                        <option value="se">실무</option>
+                        <option value="th">글로벌</option>
+                        <option value="fo">소통</option>
+                        <option value="fi">공감</option>
+                        <option value="cr">창의</option>
+                    </select>
+                  </td>
+            
+                </tr><tr>
+                    <th scope="row"><input type="name"></input></th>
+                    <td>
+                      <select>
+                          <option value="4.5">4.5</option>
+                          <option value="4.0">4.0</option>
+                          <option value="3.5">3.5</option>
+                          <option value="3.0">3.0</option>
+                          <option value="2.5">2.5</option>
+                          <option value="2.0">2.0</option>
+                          <option value="F">F</option>
+                      </select>
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td>
+                      <select>
+                          <option value="fi">융합</option>
+                          <option value="se">실무</option>
+                          <option value="th">글로벌</option>
+                          <option value="fo">소통</option>
+                          <option value="fi">공감</option>
+                          <option value="cr">창의</option>
+                      </select>
+                    </td>
+              
+                  </tr>
+              
+              
+                  <tr style="background: rgb(170, 163, 163);">
+                      <th scope="row"><input type="name"></input></th>
+                      <td>
+                        <select>
+                            <option value="4.5">4.5</option>
+                            <option value="4.0">4.0</option>
+                            <option value="3.5">3.5</option>
+                            <option value="3.0">3.0</option>
+                            <option value="2.5">2.5</option>
+                            <option value="2.0">2.0</option>
+                            <option value="F">F</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input type="number">
+                    </td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                      <td>
+                        <select>
+                            <option value="fi">융합</option>
+                            <option value="se">실무</option>
+                            <option value="th">글로벌</option>
+                            <option value="fo">소통</option>
+                            <option value="fi">공감</option>
+                            <option value="cr">창의</option>
+                        </select>
+                      </td>
+                
+                    </tr><tr>
+                        <th scope="row"><input type="name"></input></th>
+                        <td>
+                          <select>
+                              <option value="4.5">4.5</option>
+                              <option value="4.0">4.0</option>
+                              <option value="3.5">3.5</option>
+                              <option value="3.0">3.0</option>
+                              <option value="2.5">2.5</option>
+                              <option value="2.0">2.0</option>
+                              <option value="F">F</option>
+                          </select>
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>
+                          <select>
+                              <option value="fi">융합</option>
+                              <option value="se">실무</option>
+                              <option value="th">글로벌</option>
+                              <option value="fo">소통</option>
+                              <option value="fi">공감</option>
+                              <option value="cr">창의</option>
+                          </select>
+                        </td>
+                  
+                      </tr>
+                  
+                  
+                      <tr style="background: rgb(170, 163, 163);">
+                          <th scope="row"><input type="name"></input></th>
+                          <td>
+                            <select>
+                                <option value="4.5">4.5</option>
+                                <option value="4.0">4.0</option>
+                                <option value="3.5">3.5</option>
+                                <option value="3.0">3.0</option>
+                                <option value="2.5">2.5</option>
+                                <option value="2.0">2.0</option>
+                                <option value="F">F</option>
+                            </select>
+                          </td>
+                          <td>
+                            <input type="number">
+                        </td>
+                          <td>
+                            <input type="checkbox">
+                          </td>
+                          <td>
+                            <select>
+                                <option value="fi">융합</option>
+                                <option value="se">실무</option>
+                                <option value="th">글로벌</option>
+                                <option value="fo">소통</option>
+                                <option value="fi">공감</option>
+                                <option value="cr">창의</option>
+                            </select>
+                          </td>
+                    
+                        </tr>
+
+    </tbody>
+  </table>
+  </div>
+  
+</div>
+<br><br>
+  <center>
+    <div><input type="button" value="학점 계산하기" onclick="onclick()"></input></div>
+    <br>
+    <div id="um" style=" text-align: center;">*전체 평점:</div><br>
+    <div id="jun" style="text-align: center;">*전공 평점:</div>
+</center>
+</html>
